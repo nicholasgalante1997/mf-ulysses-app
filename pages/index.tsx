@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Navbar from '../consumables/Navbar';
+import FederatedHomePage from '../consumables/home'
 
 const Home: NextPage = () => {
   return (
@@ -9,12 +9,7 @@ const Home: NextPage = () => {
       <Head>
         {/* TODO: */}
       </Head>
-      <main>
-        <Navbar />
-        <div>
-            {`Hi i'm the host nextjs application!`}
-        </div>
-      </main>
+      <FederatedHomePage />
     </div>
   )
 }
