@@ -18,3 +18,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.pinnedDropMenu {
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+}

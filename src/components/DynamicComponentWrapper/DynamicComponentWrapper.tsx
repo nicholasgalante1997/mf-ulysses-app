@@ -34,6 +34,7 @@ const DynamicComponentWrapper: React.FunctionComponent<DyanamicComponentProps> =
                   }),
                 loaded: true,
                 from: "webpack4",
+            
               },
             },
           };

@@ -1,0 +1,48 @@
+
+.dropContainer {
+    all: unset;
+    border-radius: 100%;
+}
+
+.dropMenuButton {
+  all: inherit;
+  font-family: inherit;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0,0,0,0.9);
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgb(0,0,0);
+}
+
+.dropMenuButton:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.dropMenuButton:focus {
+    box-shadow: 0 0 0 2px black;
+}
+
+.item {
+    all: unset;
+    font-size: 14;
+    line-height: 1;
+    color: black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    height: 25px;
+    padding: 0 5px;
+    position: relative;
+    padding-left: 25px;
+    user-select: none;
+}
+
+.item:focus {
+    background-color: rgba(0,0,0,0.4);
+    color: aqua;
+}
