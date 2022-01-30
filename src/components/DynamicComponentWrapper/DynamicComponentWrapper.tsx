@@ -22,7 +22,7 @@ const DynamicComponentWrapper: React.FunctionComponent<DyanamicComponentProps> =
     }
   
     const Component = React.lazy(
-      () =>
+      () => 
         new Promise((moduleResolve) => {
           const react = require("react");
           const legacyShareScope = {
