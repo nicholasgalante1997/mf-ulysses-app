@@ -3091,6 +3091,11 @@ react-dom@17.0.2:
     object-assign "^4.1.1"
     scheduler "^0.20.2"
 
+react-federated-module-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-federated-module-loader/-/react-federated-module-loader-1.0.0.tgz#04aa653aabad942f9a20a24e2eef3334a9457f72"
+  integrity sha512-/7veK3EI/XVlb6e3jms7tJAvL2Jx3t4t4zpfxF0ZBy/IdqPs0GVRabMNTrEQ3xtvT+uxOLInDEsnUBqFNM0cpQ==
+
 react-is@17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz"

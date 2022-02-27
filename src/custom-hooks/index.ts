@@ -1,2 +1,2 @@
 export * from './useDynamicScript';
-export * from './useRemoteObject';
+export * from './useFederatedModule';

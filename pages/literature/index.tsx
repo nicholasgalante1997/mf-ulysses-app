@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import { useRemoteObject } from '../../src/custom-hooks';
+import { useFederatedModule } from 'react-federated-module-loader';
 
 const LiteraturePage: NextPage = () => {
-    const { scriptReady, scriptFailed, error, isLoading, target } = useRemoteObject(
+    const { scriptReady, scriptFailed, error, isLoading, data } = useFederatedModule(
         'http://localhost:4002/remoteEntry.js',
         'app_data',
         './appData'
@@ -24,12 +24,12 @@ const LiteraturePage: NextPage = () => {
         console.log('useRemoteObject is loading')
     }
 
-    if (target) {
-        console.log('target' + ' / ' + JSON.stringify(target))
+    if (data) {
+        console.log('target' + ' / ' + JSON.stringify(data))
     }
 
     return (
-        <div>
+        <div style={{padding: 32, color: 'palegoldenrod'}}>
             Literature Page
         </div>
     );
