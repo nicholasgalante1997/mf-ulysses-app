@@ -1,11 +1,11 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import DropMenu from '../src/components/DropMenu/DropMenu';
+import Navbar from '../src/components/Navbar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
       <>
-        <DropMenu className="pinnedDropMenu" />
+        <Navbar />
         <Component {...pageProps} />
       </>
       

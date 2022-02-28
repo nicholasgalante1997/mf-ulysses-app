@@ -1,3 +1,40 @@
-.container {
-  /* padding: 0 2rem; */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    color: black;
+    font-size: large;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 2rem;
+}
+
+.actionContainer {
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 16px;
+}
+
+.link {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.heading {
+    padding-left: 16px;
 }

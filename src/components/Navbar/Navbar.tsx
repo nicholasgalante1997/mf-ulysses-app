@@ -1,64 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
-import styled from 'styled-components';
-
-const StyledDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-
-    background-color: black;
-    color: white;
-
-    font-size: large;
-
-    padding: 0.5rem;
-    min-width: 100vw;
-    min-height: 2rem;
-`;
-
-const StyledHeading = styled.h2`
-  padding-left: 16px;
-`;
-
-const StyledNextLink = styled.a`
-  padding-left: 8px;
-  padding-right: 8px;
-`
+import styles from '../../../styles/home.module.css';
 
 
 const NavBar: React.FunctionComponent<{}> = ({ children }) => (
-    <StyledDiv>
-        <StyledHeading>Whats Next?</StyledHeading>
-        <div style={{ marginLeft: '5vw', display: 'flex', flexDirection: 'row'}}>
-            <Link href="/" passHref>
-                <StyledNextLink>
-                    Home
-                </StyledNextLink>
-            </Link>
-            <Link href="/literature" passHref>
-                <StyledNextLink>
-                    Literature
-                </StyledNextLink>
-            </Link>
-           <Link href="/claims" passHref>
-                <StyledNextLink>
-                    Popular Claims
-                </StyledNextLink>
-           </Link>
-            <Link href="/claims/create" passHref>
-                <StyledNextLink>
-                    Create a claim
-                </StyledNextLink>
-            </Link>
-           <Link href="/claims/f/user/{{userid}}" passHref>
-                <StyledNextLink>
-                    Actively Tracking
-                </StyledNextLink>
-           </Link>
+    <div className={styles.navbar}>
+        <h2 className={styles.heading}>Ulysses</h2>
+        <div className={styles.actionContainer}>
+            <p className={styles.link}>Stories</p>
+            <p className={styles.link}>Home</p>
+            <p className={styles.link}>Chronology</p>
+            <p className={styles.link}>About</p>
         </div>
-    </StyledDiv>
+    </div>
 );
   
   export default NavBar;

@@ -1,12 +1,12 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
+import FederatedWhitePage from '../../src/consumables/literature/white-page';
 
 const ArticlePage: NextPage = () => {
-    const { query } = useRouter();
+    const { query: { article } } = useRouter();
+    const safeStr = `./${article}`
     return (
-        <div>
-            {query.article} Article Page
-        </div>
+        <FederatedWhitePage articleKey={safeStr} />
     );
 }
 

@@ -1,16 +1,16 @@
+import React from 'react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import FederatedHomePage from '../src/consumables/home'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <React.Fragment>
       <Head>
         {/* TODO: */}
       </Head>
       <FederatedHomePage />
-    </div>
+    </React.Fragment>
   )
 }
 
