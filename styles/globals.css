@@ -2,8 +2,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  background-color: #e2e5de;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,10 +18,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
-
-.pinnedDropMenu {
-  position: absolute;
-  top: 5vh;
-  right: 5vh;
 }

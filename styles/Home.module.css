@@ -5,14 +5,14 @@
     align-items: center;
     justify-self: center;
     align-self: center;
-    background-color: white;
+    background-color: #e2e5de;
     color: black;
     font-size: large;
     font-family: 'Lora', serif;
     font-weight: 500;
     border-bottom: 2px solid black;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: -1px;
+    border-bottom-right-radius: -1px;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-top: 5vh;
@@ -34,6 +34,12 @@
     padding-left: 12px;
     padding-right: 12px;
 }
+ .link:hover {
+    color: #800000;
+    font-size: x-large;
+    transition: font-size 0.3s;
+    text-decoration: underline;
+ }
 
 .heading {
     padding-left: 16px;
